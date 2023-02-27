@@ -1,0 +1,771 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
+
+.cabeza {
+    background-color:#820000;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.cabeza .logoYTitulo {
+    display:inline-flex;
+}
+
+.logoCabeza {
+    width: 65px;
+    height: 90px;
+}
+
+.tituloCabeza {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-left: 15px;
+    font-family: "Gilda Display", sans-serif;
+    margin-top: 28px;
+}
+
+.cabeza ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.cabeza ul li {
+    margin: 20px;
+}
+
+.cabeza ul li a {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    padding: 10px;
+}
+
+.cabeza div button {
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: inherit;
+    border: none;
+}
+
+.cabeza div button p {
+    font-size: 24px;
+}
+
+.cabeza div button svg {
+    width: 50px;
+    height: 50px;
+}
+
+.App .background Header {
+    background-color: whitesmoke;
+}
+
+.logo {
+    width: 55px;
+    height: 90px;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(17, 1, 1);
+}
+
+.fondoInicio {
+    background: #000000;
+    opacity: 0.94;
+}
+
+.frecuent-questions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 86%;
+    margin: 0 7% 5% 7%;
+}
+
+.tituloPreguntasFrecuentes {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* .collapsible {
+    max-width: 1050px;
+} */
+
+.collapsible div {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 20px;
+}
+
+.imgFooter {
+    width: 100px;
+    height: 150px;
+}
+
+.item-list-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+}
+
+.pagination li {
+    padding: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+}
+
+.pagination li:hover {
+    background-color: rgba(216, 15, 15, 0.6);
+}
+
+.imageWine {
+    height: 195px;
+}
+
+.card-container-wine {
+    height: 490px !important;
+}
+
+.counter {
+    margin-top: 40px;
+}
+
+.space-product-title {
+    width: 100%;
+}
+
+.product-title {
+    font-size: 34px;
+    text-align: center;
+    margin: 5vh 0;
+    font-weight: bold;
+}
+
+.font {
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.cart-table {
+    min-width: 150px;
+}
+
+.imageCart {
+    height: 150px;
+    width: 280px;
+}
+
+.cont {
+    max-width: 80%;
+    margin: 8% 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+}
+
+.info {
+    max-width: 60%;
+}
+
+.buttons {
+    margin: 20px 50px 20px 69%;
+    max-width: 170px;
+}
+
+.m {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.mt-buttons {
+    margin-top: 22px !important;
+}
+
+.clear-cart:hover {
+    opacity: 0.6;
+    animation: clear 2s linear
+}
+
+.icon-clear {
+    padding-right: 5px;
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkout {
+    height: 100%;
+    background-color: bisque;
+    box-shadow: rgb(204, 166, 119, 0.8) 5px 5px, rgb(204, 166, 119, 0.6) 10px 10px, rgb(204, 166, 119, 0.4) 15px 15px, rgb(204, 166, 119, 0.2) 20px 20px, rgb(204, 166, 119, 0.1) 25px 25px;
+    max-width: 400px;
+}
+
+form input:valid {
+	border: rgb(1, 209, 1) 1px solid;
+}
+
+form input:invalid {
+	border: rgb(207, 17, 17) 1px solid;
+}
+
+.footer-two {
+    background-color: #000000;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 16px;
+}
+
+.footer-two address {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.footer-two a svg {
+    width: 30px;
+    height: 30px;
+    margin: 12px 0;
+}
+
+.button-responsive {
+    align-items: left;
+}
+
+.input-and-label {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.label {
+    width: 100px;
+    margin: 20px;
+    padding: 0;
+}
+
+.input-and-label > input {
+    width: 30vw;
+}
+
+@media (max-width: 1023px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-between !important;
+    }
+    .item-cart {
+        margin: 0 !important;
+    }
+
+    .check {
+        gap: 20px;
+    }
+
+    .label {
+        width: 100px;
+        margin: 15px;
+        padding: 0;
+    }
+    
+    .input-and-label > input {
+        width: 28vw;
+    }
+
+    .checkout {
+        max-width: 320px;
+        margin: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .label {
+        width: 100px;
+        margin: 15px;
+        padding: 0;
+    }
+
+    .check {
+        gap: 10px;
+    }
+
+    .checkout {
+        width: 280px;
+        margin: 50px 20px;
+    }
+
+    .form-control {
+        margin: 15px 0;
+    }
+
+    .button-pay {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .title-item {
+        font-size: 26px !important;
+        text-align: left;
+        max-width: 250px;
+    }
+
+    .cont {
+        gap: 50px
+    }
+
+    .titleCart {
+        font-size: 26px;
+    }
+
+    .buttonProuctCart {
+        font-size: 0.8rem;
+        height: 3rem;
+    }
+
+    .tableResponsive {
+        white-space: break-spaces;
+        text-align: center;
+        font-size: 18px;
+        min-width: 0px !important;
+    }
+
+    .imageCart {
+        height: 120px;
+        width: 120px;
+    }
+
+    .buttons {
+        margin: 0;
+    }
+    
+    .input-and-label > input {
+        width: 32vw;
+    }
+
+    .label {
+        width: 90px;
+        margin: 10px;
+    }
+
+    .check {
+        gap: 5px;
+    }
+
+    .checkout {
+        width: 250px;
+        margin: 40px 0px;
+    }
+
+    .form-control {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .image-item {
+        width: 200px;
+        height: 300px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .check {
+        flex-direction: column;
+    }
+
+    .form {
+        margin: 0 10%;
+        width: 80%;
+    }
+
+    .box-1 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .input-and-label > * {
+        font-size: 22px;
+    }
+
+    .input-and-label {
+        width: 100%;
+    }
+
+    .input-and-label > input {
+        width: 80%;
+        height: 58px;
+    }
+
+    .label {
+        margin: 20px 0;
+    }
+
+    .check {
+        align-items: center;
+    }
+
+    .checkout {
+        width: 90%;
+    }
+
+    .form-control {
+        margin: 15px 0;
+    }
+
+    .button-pay {
+        height: 55px;
+        width: 80%;
+        margin: 5px 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    .frecuent-questions {
+        max-width: 96%;
+        margin: 0 2% 5vh 2%;
+        /* margin-bottom: 5vh; */
+    }
+
+    .footer {
+        height: 300px;
+        padding: 0.8em;
+        gap: 10px;
+    }
+
+    .cont {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .info-small {
+        text-align: center;
+    }
+
+    .title-item {
+        font-size: 24px !important;
+        text-align: center;
+        max-width: 100% !important;
+    }
+
+    .button-responsive {
+        align-items: center;
+    }
+
+    .span-responsive {
+        font-size: 1rem;
+    }
+
+    .tableResponsive {
+        font-size: 14px !important;
+        line-height: 1rem;
+    }
+
+    .quantity {
+        width: 20px;
+    }
+
+    .table {
+        text-align: center;
+    }
+
+    #priceTotal {
+        font-size: 18px !important;
+    }
+
+    .buttons {
+        width: 160px;
+    }
+
+    .finishCart,
+    .clear-cart {
+        height: 9vh;
+        border-radius: 15px;
+        padding: 3px 8px;
+    }
+
+    .checkout {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .info-small {
+        max-width: 100%;
+    }
+
+    .text-responsive {
+        font-size: 22px;
+    }
+
+    #productCart {
+        width: 96% !important;
+        margin: 2%;
+    }
+
+    .tableResponsive {
+        border-bottom-width: 0;
+        font-size: 16px !important;
+        font-weight: bold;
+    }
+
+    thead {
+        display: none;
+    }
+
+    .subPrice {
+        text-decoration: 2px darkred underline !important;
+    }
+    
+    .titleCart {
+        text-align: center;
+    }
+
+    .input-and-label > * {
+        font-size: 20px;
+    }
+
+    .input-and-label > input {
+        height: 50px;
+    }
+
+    .checkout {
+        width: 90%;
+    }
+}
+
+@media (max-width: 460px) {
+    #productCart {
+        width: 90% !important;
+        margin: 3% 5%;
+    }
+
+    .tableResponsive {
+        font-size: 14px !important;
+        padding: 5px !important;
+        margin: 0;
+        max-width: 90px;
+        font-weight: normal;
+    }
+
+    .buttons {
+        width: 140px;
+    }
+
+    .finishCart,
+    .clear-cart {
+        font-size: 12px;
+        width: 140px;
+        margin: 10px;
+        height: 6vh;
+    }
+
+    .input-and-label > * {
+        font-size: 18px;
+    }
+
+    .button-pay {
+        height: 50px;
+        margin: 10px 10%;
+    }
+
+    .checkout {
+        margin: 15px 0 30px 0;
+    }
+
+    .form {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .label {
+        width: 80px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .imageWine {
+        height: 180px;
+    }
+
+    .card-container-wine {
+        width: 88%;
+        margin: 0 5%;
+        height: auto;
+    }
+
+    .card-body {
+        gap: 0.2rem;
+        flex: inherit;
+    }
+
+    .card-title-second {
+        font-size: 20px;
+    }
+
+    .card-body p {
+        margin: 4px;
+    }
+
+    .card-body div {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .tituloPreguntasFrecuentes {
+        font-size: 28px;
+    }
+    .small-size {
+        text-align: center;
+        margin: 0;
+        padding: auto;
+    }
+    .font-faq {
+        font-size: 20px;
+    }
+    .image-item {
+        width: 180px;
+        height: 260px;
+    }
+    .text-description {
+        font-size: 19px;
+        margin-bottom: 0.5rem;
+    }
+    .text-responsive {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+    .title-item {
+        margin-bottom: 10px;
+    }
+    .div-info {
+        margin-top: 0.4rem;
+    }
+    .button-small {
+        margin-top: 10px;
+    }
+    .counter {
+        margin-top: 20px;
+    }
+    .addCart {
+        margin-bottom: 0.7rem;
+    }
+
+    .button-pay {
+        height: 50px;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .form-control {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .input-and-label {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-and-label > * {
+        font-size: 16px;
+    }
+
+    .label {
+        align-items: left;
+        margin-left: 1.25rem;
+    }
+
+    .form-control {
+        margin-left: 1.25rem;
+    }
+
+    .button-pay {
+        width: 84%;
+        margin: 5px 8%;
+    }
+
+    .checkout {
+        width: 80%;
+        margin: 15px 10% 30px 10%;
+    }
+}
+
+@media (max-width: 350px) {
+    .product-title {
+        font-size: 28px;
+    }
+
+    .imageWine {
+        height: 160px;
+    }
+
+    .card-container-wine {
+        width: 90%;
+        margin: 0 4%;
+        height: auto;
+    }
+
+    .card-body {
+        gap: 0.15rem;
+        flex: inherit;
+    }
+
+    .card-title-second {
+        font-size: 18px;
+    }
+
+    .card-body p {
+        margin: 3px;
+    }
+
+    .card-body div {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
